@@ -2,6 +2,11 @@
 
 - This project is developed by `Mehmet Ali Külle` to understand using `.Net Core MVC and SignalR`
 
+
+## Dependencies
+
+- [SignalR](https://github.com/SignalR/SignalR) - For instant message
+
 # Code Overview
 
 - `ChatApplication.Entities` is Entity Layer of project
