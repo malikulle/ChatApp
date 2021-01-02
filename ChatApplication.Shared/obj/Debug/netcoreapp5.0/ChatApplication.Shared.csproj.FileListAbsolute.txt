@@ -1,0 +1,12 @@
+C:\Users\malik\source\repos\ChatApplication\ChatApplication.Shared\bin\Debug\netcoreapp5.0\ChatApplication.Shared.deps.json
+C:\Users\malik\source\repos\ChatApplication\ChatApplication.Shared\bin\Debug\netcoreapp5.0\ChatApplication.Shared.dll
+C:\Users\malik\source\repos\ChatApplication\ChatApplication.Shared\bin\Debug\netcoreapp5.0\ref\ChatApplication.Shared.dll
+C:\Users\malik\source\repos\ChatApplication\ChatApplication.Shared\bin\Debug\netcoreapp5.0\ChatApplication.Shared.pdb
+C:\Users\malik\source\repos\ChatApplication\ChatApplication.Shared\obj\Debug\netcoreapp5.0\ChatApplication.Shared.csprojAssemblyReference.cache
+C:\Users\malik\source\repos\ChatApplication\ChatApplication.Shared\obj\Debug\netcoreapp5.0\ChatApplication.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\malik\source\repos\ChatApplication\ChatApplication.Shared\obj\Debug\netcoreapp5.0\ChatApplication.Shared.AssemblyInfoInputs.cache
+C:\Users\malik\source\repos\ChatApplication\ChatApplication.Shared\obj\Debug\netcoreapp5.0\ChatApplication.Shared.AssemblyInfo.cs
+C:\Users\malik\source\repos\ChatApplication\ChatApplication.Shared\obj\Debug\netcoreapp5.0\ChatApplication.Shared.csproj.CoreCompileInputs.cache
+C:\Users\malik\source\repos\ChatApplication\ChatApplication.Shared\obj\Debug\netcoreapp5.0\ChatApplication.Shared.dll
+C:\Users\malik\source\repos\ChatApplication\ChatApplication.Shared\obj\Debug\netcoreapp5.0\ref\ChatApplication.Shared.dll
+C:\Users\malik\source\repos\ChatApplication\ChatApplication.Shared\obj\Debug\netcoreapp5.0\ChatApplication.Shared.pdb

@@ -1,0 +1,88 @@
+﻿@model Chat
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="chat-body">
+    @foreach (var message in Model.Messages)
+    {
+        <div class="message">
+            <header>@message.Name :</header>
+            <p>@message.Text</p>
+            <footer>@message.TimeStamp</footer>
+        </div>
+    }
+</div>
+<form onsubmit="sendMessage(event)" asp-controller="Message" asp-action="SendMessage" method="post" class="chat-input">
+    <input type="hidden" name="chatId" value="@Model.Id" />
+    <input type="hidden" name="roomName" value="@Model.Name" />
+    <input type="text" name="message" id="message-input" />
+    <button type="submit">send</button>
+</form>
+
+@section Scripts
+{
+    <script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var connection = new signalR.HubConnectionBuilder()
+                .withUrl("/chatHub")
+                .build();
+
+            var _connectionId = "";
+
+            connection.start().then(() => {
+                connection.invoke("GetConnectionId")
+                    .then((connectionId) => {
+                        console.log("connectionId => ", connectionId)
+                        _connectionId = connectionId
+                        joinRoom()
+                    })
+            })
+
+            connection.on("ReceiveMessage", function (data) {
+                var message = document.createElement("div")
+                message.classList.add("message")
+                var header = document.createElement("header");
+                header.appendChild(document.createTextNode(data.name))
+
+                var p = document.createElement("p");
+                p.appendChild(document.createTextNode(data.text))
+
+                var footer = document.createElement("footer")
+                footer.appendChild(document.createTextNode(new Date(data.timeStamp).toLocaleString()))
+
+                message.appendChild(header)
+                message.appendChild(p)
+                message.appendChild(footer)
+
+                var body = document.querySelector(".chat-body")
+                body.append(message)
+            });
+
+
+            function joinRoom() {
+                connection.invoke("JoinGroup", @Model.Id).catch((err) => console.log(err))
+            }
+
+
+        })
+        var form = null;
+        var sendMessage = function (event) {
+            event.preventDefault()
+            form = event.target;
+
+            var data = new FormData(event.target)
+
+            axios.post("/Message/SendMessage", data)
+                .then(res => console.log("message sent"))
+
+            document.getElementById("message-input").value = ""
+        }
+
+
+    </script>
+
+}

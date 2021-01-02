@@ -1,0 +1,12 @@
+C:\Users\malik\source\repos\ChatApplication\ChatApplication.Entities\bin\Debug\netcoreapp5.0\ChatApplication.Entities.deps.json
+C:\Users\malik\source\repos\ChatApplication\ChatApplication.Entities\bin\Debug\netcoreapp5.0\ChatApplication.Entities.dll
+C:\Users\malik\source\repos\ChatApplication\ChatApplication.Entities\bin\Debug\netcoreapp5.0\ref\ChatApplication.Entities.dll
+C:\Users\malik\source\repos\ChatApplication\ChatApplication.Entities\bin\Debug\netcoreapp5.0\ChatApplication.Entities.pdb
+C:\Users\malik\source\repos\ChatApplication\ChatApplication.Entities\obj\Debug\netcoreapp5.0\ChatApplication.Entities.csprojAssemblyReference.cache
+C:\Users\malik\source\repos\ChatApplication\ChatApplication.Entities\obj\Debug\netcoreapp5.0\ChatApplication.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\malik\source\repos\ChatApplication\ChatApplication.Entities\obj\Debug\netcoreapp5.0\ChatApplication.Entities.AssemblyInfoInputs.cache
+C:\Users\malik\source\repos\ChatApplication\ChatApplication.Entities\obj\Debug\netcoreapp5.0\ChatApplication.Entities.AssemblyInfo.cs
+C:\Users\malik\source\repos\ChatApplication\ChatApplication.Entities\obj\Debug\netcoreapp5.0\ChatApplication.Entities.csproj.CoreCompileInputs.cache
+C:\Users\malik\source\repos\ChatApplication\ChatApplication.Entities\obj\Debug\netcoreapp5.0\ChatApplication.Entities.dll
+C:\Users\malik\source\repos\ChatApplication\ChatApplication.Entities\obj\Debug\netcoreapp5.0\ref\ChatApplication.Entities.dll
+C:\Users\malik\source\repos\ChatApplication\ChatApplication.Entities\obj\Debug\netcoreapp5.0\ChatApplication.Entities.pdb

@@ -1,0 +1,48 @@
+﻿@model UserRegisterDto
+
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_UserLoginLayout.cshtml";
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-5">
+            <div class="card shadow-lg border-0 rounded-lg mt-5">
+                <div class="card-header"><h3 class="text-center font-weight-light my-4"><i class="fas fa-house-user"></i> Register</h3></div>
+                <div class="card-body">
+                    <form asp-controller="Account" asp-action="Register" method="post">
+                        <div asp-validation-summary="All" class="text-danger"></div>
+                        <div class="form-group">
+                            <label class="small mb-1" asp-for="Email"></label>
+                            <input class="form-control py-4" asp-for="Email" type="email" placeholder="Lütfen Email Adresinizi Giriniz" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="small mb-1" asp-for="UserName"></label>
+                            <input class="form-control py-4" asp-for="UserName" type="text" placeholder="Lütfen Kullanıcı Adı Giriniz" />
+                            <span asp-validation-for="UserName" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="small mb-1" asp-for="Password"></label>
+                            <input class="form-control py-4" asp-for="Password" type="password" placeholder="Lütfen Parolanızı Adresinizi Giriniz" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="small mb-1" asp-for="ConfirmPassword"></label>
+                            <input class="form-control py-4" asp-for="ConfirmPassword" type="password" placeholder="Lütfen Parolanızı Giriniz" />
+                            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                        </div>
+                        <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
+                            <button type="submit" class="btn btn-primary"><span class="fas fa-sign-in-alt"></span> Kayıt Ol</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center">
+                    <div class="small"><a asp-controller="Account" asp-action="Login" class="btn btn-success btn-block text-white"><span class="fas fa-user-edit"></span> Giriş Yap!!</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+﻿@model List<Chat>
+
+
+@foreach (var chat in Model)
+{
+    <div class="chat-body">
+        <a asp-controller="Chat" asp-action="JoinRoom" asp-route-id="@chat.Id" class="room-button">@chat.Name</a>
+    </div>
+}
